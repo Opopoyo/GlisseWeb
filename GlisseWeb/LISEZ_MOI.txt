@@ -1,0 +1,160 @@
+GLISSEWEB V7.3 – BARRE COMPACTE AVEC FERMETURE INDIVIDUELLE (PROTOTYPE)
+==========================================================
+
+INSTALLATION / MISE À JOUR DE LA V7.2
+---------------------------------
+1. Fermer entièrement GlisseWeb V7 (ou toute autre version).
+2. Extraire la totalité de ce ZIP dans un dossier Windows.
+3. Double-cliquer sur INSTALLER_GLISSEWEB.cmd.
+4. L'installation vérifie Python/Qt WebEngine, installe ce qu'il faut et
+   crée le raccourci GlisseWeb sur le Bureau.
+5. Utiliser le raccourci pour lancer le navigateur.
+
+Le code de l'application est installé pour le compte Windows courant dans :
+    %LOCALAPPDATA%\GlisseWeb
+Les fichiers de favoris, d'historique et de préférences déjà présents sont
+conservés lors de cette mise à jour. L'installateur n'est pas un .exe autonome.
+Il nécessite une connexion Internet pour obtenir les dépendances absentes.
+
+NOUVEAUTÉ V7.3 – FERMER DIRECTEMENT UN ONGLET COMPACT
+----------------------------------------------------------
+- Chaque icône d'onglet dans la petite barre à gauche comporte désormais
+  une petite croix « × » en haut à droite de son encadré.
+- Cliquer sur l'icône ouvre l'onglet ; cliquer sur « × » ferme uniquement
+  l'onglet correspondant, sans en sélectionner un autre au préalable.
+- Fermer le dernier onglet affiche automatiquement un nouvel accueil.
+- Le bouton × tient dans les 39 pixels prévus pour chaque icône : la barre
+  conserve sa largeur de 62 px, son défilement et ses commandes +, − et ☰.
+- Les raccourcis clavier et la marge basse en mode fenêtre restent identiques.
+- Cette version est issue exclusivement de la V7.2. Aucune modification
+  de la V8 (connexions) n'est reprise.
+
+NOUVELLE OPTION V7.1 – BARRE ÉTROITE DE FAVICONS
+------------------------------------------------
+Cette version est fondée UNIQUEMENT sur le code de GlisseWeb V7 ;
+aucune option d'authentification de la V8 n'est intégrée.
+
+ACTIVER : dans le grand panneau de gauche, cliquer sur l'icône « ▥ »
+(en haut, à côté d'Épingler). Ou presser F8.
+
+En mode compact :
+- Une barre persistante de 62 pixels reste à gauche, sans cacher les pages.
+- Le bouton « ☰ » en haut déploie et épingle le panneau complet V7.
+- Chaque favicon correspond à un onglet ouvert. Cliquer pour le sélectionner.
+- L'onglet actif est encadré d'une couleur turquoise.
+- Survol : nom complet de l'onglet et nom du site.
+- Si un favicon est absent, une lettre ou un pictogramme le remplace.
+- Le défilement vertical apparaît automatiquement quand c'est nécessaire.
+- Le bouton « + » en bas ouvre un onglet supplémentaire sans élargir le rail.
+- Le petit bouton « − » en dessous quitte le mode compact et rétablit
+  le panneau masqué d'origine, réouvrable par le bord de l'écran.
+
+Après avoir déployé le panneau complet, la commande « ❮ » permet de
+revenir à la barre compacte. Le bouton « ▥ » permet aussi de réactiver
+le mode compact depuis le panneau complet. F8 active/désactive le mode.
+La préférence est enregistrée localement dans Data\config.json et
+restaurée au prochain démarrage.
+Les onglets privés ne sont pas enregistrés dans le cache de favicons.
+
+TOUT LE RESTE DE LA V7 EST CONSERVÉ : accueil étoilé, favoris, historique,
+miniatures, vue générale F9, affichage plein écran et protections locales.
+
+NOUVEAUTÉS V7 – BARRE LATÉRALE
+----------------------------
+- Les contrôles sont regroupés en haut : épingler, masquer la barre, passer
+  en mode fenêtre / revenir au plein écran, et fermer le navigateur (×).
+- Le bouton de fenêtre est aussi accessible par la touche F11.
+- Les commandes du bas sont réduites à UNE seule petite rangée de pictogrammes :
+  aperçus, dossier des téléchargements, zoom moins, zoom 100 %, zoom plus.
+- Barre d'adresse large et lisible, avec URL complète au survol et Ctrl+L.
+- La zone des miniatures récupère de l'espace vertical ; la barre latérale
+  redimensionne toujours la page web au lieu de la masquer.
+- À partir de 4 onglets, la grille passe en deux colonnes si la largeur le
+  permet. Chaque carte garde son aperçu EN HAUT, puis favicon, titre et ×.
+- Pour 10 onglets, la grille vise cinq rangées de deux cartes dans la hauteur
+  réellement disponible ; le défilement reste nécessaire sur un petit écran.
+- À forte densité, la taille des cartes diminue progressivement sans
+  supprimer les boutons de fermeture ou les noms de sites.
+
+NOUVEAUTÉS V7 – ACCUEIL ET HISTORIQUE
+-----------------------------------
+- Le texte « Le web, à ta façon. » a été remplacé par le LOGO GLISSEWEB
+  (le fichier icône déjà fourni) et son nom.
+- Fond étoilé animé, raccourcis flottants et ajout de sites conservés.
+- Dans Historique (Ctrl+H), les entrées montrent le favicon du site quand
+  GlisseWeb le connaît, ou une initiale dans le cas contraire.
+- Les favicons des onglets normaux sont maintenant mis en cache localement
+  au fur et à mesure des visites dans :
+    %LOCALAPPDATA%\GlisseWeb\Data\Favicons
+  Les anciennes entrées d'historique peuvent donc ne pas encore avoir d'icône.
+  Un nouveau passage sur le site permet de mémoriser son favicon.
+- Les icônes ne sont pas enregistrées à partir des onglets privés.
+- Le bouton d'effacement de l'historique efface également ce cache local.
+
+RACCOURCIS PRINCIPAUX
+--------------------
+F8                  Activer / désactiver la barre compacte
+F11                 Plein écran / vraie fenêtre redimensionnable
+F9                  Vue générale de tous les onglets
+Échap               Quitter la vue générale si elle est ouverte
+Ctrl+T              Nouvel onglet
+Ctrl+Maj+N          Onglet privé
+Ctrl+W              Fermer l'onglet actif
+Ctrl+Maj+T          Rouvrir le dernier onglet normal fermé
+Ctrl+Tab            Onglet suivant
+Ctrl+Maj+Tab        Onglet précédent
+Ctrl+L              Sélectionner toute l'URL
+Ctrl+F              Chercher dans la page
+Ctrl+D              Favoris
+Ctrl+H              Historique avec favicon
+Ctrl+J              Téléchargements
+Ctrl+0              Zoom à 100 %
+F5 / Ctrl+R         Rafraîchir
+Alt+F4             Quitter le navigateur
+
+SÉCURITÉ ET LIMITES
+------------------
+Les protections de la V7 sont conservées : refus de certaines navigations
+vers les protocoles locaux, alertes HTTP et téléchargements sensibles,
+permissions camera/micro/localisation demandées explicitement, profil privé,
+refus de démarrer avec des options de désactivation du bac à sable Chromium.
+
+ATTENTION : GlisseWeb reste un logiciel expérimental non audité, dépourvu
+notamment de protection anti-hameçonnage dédiée et de mises à jour automatiques
+du moteur web. Mettre à jour Edge ou Chrome ne met PAS à jour son moteur Qt
+WebEngine. Pour les paiements, les mots de passe et la banque, utiliser
+plutôt un navigateur grand public à jour. Garder Windows Defender actif.
+
+DIAGNOSTIC / DÉSINSTALLATION
+---------------------------
+Si GlisseWeb ne démarre pas, exécuter DIAGNOSTIC_GLISSEWEB.cmd et relever les
+messages d'erreur affichés. La désinstallation complète est disponible via
+DESINSTALLER_GLISSEWEB.cmd (attention : elle peut effacer les données locales).
+
+TESTS EFFECTUÉS
+---------------
+- Vérification de syntaxe et compilation du code source Python.
+- Tests unitaires : navigation et téléchargements, largeur/hauteur de la
+  grille sur diverses tailles d'écran et quantités d'onglets, favicon cache.
+- Contrôle du ZIP et des fichiers d'installation.
+- L'interface Qt et le rendu Windows n'ont PAS été exécutés sur le PC de
+  destination. Le fonctionnement graphique doit encore être confirmé sur
+  l'ordinateur Windows où le navigateur est installé.
+
+
+CORRECTIFS V7.2
+--------------
+- Mode fenêtre (F11) : les commandes de bas de la barre compacte sont remontées
+  de 100 pixels environ pour rester accessibles au-dessus de la barre de tâches.
+  Sur une toute petite fenêtre, cette marge est réduite automatiquement.
+- Le panneau central de favicons dispose toujours d'un défilement vertical.
+- Lorsque la souris se trouve sur la colonne compacte, utiliser les flèches
+  Haut / Bas pour sélectionner l'onglet précédent / suivant.
+- À tout moment, même si la souris est sur la page, utiliser Alt+Haut
+  ou Alt+Bas. Ces raccourcis fonctionnent lorsque le mode compact est actif.
+- La navigation boucle du dernier onglet vers le premier, et inversement.
+- Les flèches simples continuent de faire défiler les pages lorsque la souris
+  est en dehors de la barre compacte : les formulaires ne sont pas perturbés.
+- La fenêtre restaurée reste dans la zone de travail Windows lorsque possible.
+
+Toutes les fonctions et protections V7.1 sont conservées. Aucune option V8 ajoutée.
