@@ -1,0 +1,24 @@
+GLISSEWEB V7.3 - SOURCES COMPLETES
+==================================
+Archive contenant les sources exactes du projet V7.3 Final, sans caches Python.
+
+GlisseWeb/main.py             Interface, navigation, onglets, accueil, historique
+GlisseWeb/guard.py            Règles de filtrage des URL et téléchargements
+GlisseWeb/layout_math.py      Calculs de disposition de la barre d'onglets
+GlisseWeb/icon_cache.py       Mise en cache des icônes de sites
+GlisseWeb/test_*.py           Tests unitaires
+GlisseWeb/requirements.txt    Dépendances Python et versions
+GlisseWeb/glisseweb.ico       Icône de l'application
+install/install.ps1           Installation Windows
+install/uninstall.ps1         Désinstallation Windows
+*.cmd                         Scripts Windows installation, diagnostic, désinstallation
+LISEZ_MOI.txt                 Instructions et avertissements de la version V7.3
+
+Pour installer ou réinstaller : décompressez entièrement l'archive,
+puis double-cliquez sur INSTALLER_GLISSEWEB.cmd (Windows 64 bits).
+
+Les bibliothèques externes (Python, PySide6, Qt WebEngine) ne sont pas incluses
+dans l'archive, elles sont téléchargées par l'installateur.
+
+Ceci est le code source d'un navigateur expérimental. Ne pas considérer
+son niveau de sécurité équivalent à un navigateur grand public maintenu.
